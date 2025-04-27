@@ -1,0 +1,104 @@
+body {
+    font-family: 'Homemade Apple', cursive;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.order-summary {
+    margin-bottom: 20px;
+}
+
+.order-summary table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.order-summary th, .order-summary td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.order-summary .actions button {
+    font-family: 'Homemade Apple', cursive;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #f4f4f4;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 5px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.order-summary .actions button:hover {
+    background-color: #555;
+}
+
+.shipping-details input, .payment-method input {
+    width: calc(100% - 20px);
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Homemade Apple', cursive;
+}
+
+.payment-method label {
+    display: block;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+button {
+    font-family: 'Homemade Apple', cursive;
+    padding: 15px;
+    background-color: #333;
+    color: #f4f4f4;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #555;
+    transform: scale(1.02);
+}

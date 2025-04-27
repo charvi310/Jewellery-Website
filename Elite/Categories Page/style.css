@@ -1,0 +1,320 @@
+:root {
+    --font-family: "Homemade Apple", cursive;
+    --bg-color: #f4f4f4;
+    --text-color: #333;
+    --header-bg: #f8f8f8;
+    --header-hover-bg: #e0e0e0;
+    --header-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --header-hover-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    --footer-bg: #333;
+    --footer-hover-bg: #555;
+    --secondary-text-color: #555;
+    --secondary-hover-color: #777;
+    --section-border-color: #ddd;
+    --section-hover-border-color: #bbb;
+    --card-bg: #fff;
+    --card-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --card-hover-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    --transition-duration: 0.3s;
+}/*d0b8ac-f3d8c7-efe5dc-fbfefb*/
+
+body {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color var(--transition-duration) ease, color var(--transition-duration) ease;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Header Styling */
+.main-header {
+    font-family: "Homemade Apple", cursive;
+    font-style: normal;
+    font-weight: 400;
+    background-color: #fff;
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.main-nav ul li {
+    margin-left: 30px;
+}
+
+.main-nav ul li a {
+    text-decoration: navajowhite;
+    color: #555;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+    color: #000;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: var(--header-bg);
+    box-shadow: var(--header-shadow);
+    transition: background-color var(--transition-duration) ease, box-shadow var(--transition-duration) ease;
+}
+
+header:hover {
+    background-color: var(--header-hover-bg);
+    box-shadow: var(--header-hover-shadow);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+    text-transform: capitalize;
+    transition: color var(--transition-duration) ease;
+}
+
+header h1:hover {
+    color: var(--secondary-text-color);
+}
+
+header p {
+    font-size: 1.1rem;
+    color: var(--secondary-text-color);
+    max-width: 600px;
+    margin: 0 auto;
+    transition: color var(--transition-duration) ease;
+}
+
+header p:hover {
+    color: var(--secondary-hover-color);
+}
+
+main {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.jewelry-section {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.jewelry-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+    text-transform: capitalize;
+    letter-spacing: 0.1em;
+    border-bottom: 2px solid var(--section-border-color);
+    padding-bottom: 0.5rem;
+    transition: color var(--transition-duration) ease, border-color var(--transition-duration) ease;
+}
+
+.jewelry-section h2:hover {
+    color: var(--secondary-text-color);
+    border-color: var(--section-hover-border-color);
+}
+
+.jewelry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Flexible grid */
+    gap: 2rem; /* Consistent gap between items */
+    margin-top: 1.5rem;
+    opacity: 0.8;
+    transition: opacity var(--transition-duration) ease;
+}
+
+.jewelry-grid:hover {
+    opacity: 1;
+}
+
+@media (max-width: 600px) {
+    .jewelry-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Adjusted for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .jewelry-grid {
+        grid-template-columns: 1fr; /* Single column for very small screens */
+    }
+}
+
+.jewelry-category {
+    background-color: var(--card-bg);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.jewelry-category:hover {
+    transform: scale(1.05);
+    box-shadow: var(--card-hover-shadow);
+}
+
+.jewelry-category.circular {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+    justify-content: center;
+}
+
+.jewelry-category.circular h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+    text-transform: capitalize;
+    transition: color var(--transition-duration) ease;
+}
+
+.jewelry-category.circular h3:hover {
+    color: var(--secondary-text-color);
+}
+
+.jewelry-category.circular img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+    aspect-ratio: 1/1;
+    transition: transform var(--transition-duration) ease-in-out;
+}
+
+.jewelry-category.circular img:hover {
+    transform: scale(1.1);
+}
+
+.jewelry-category.circular p {
+    font-size: 0.8rem;
+    color: var(--secondary-text-color);
+    padding: 0 1rem;
+    text-align: center;
+    transition: color var(--transition-duration) ease;
+}
+
+.jewelry-category.circular p:hover {
+    color: var(--secondary-hover-color);
+}
+
+.jewelry-image-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0.5rem auto;
+    transition: transform var(--transition-duration) ease-in-out, box-shadow var(--transition-duration) ease-in-out;
+}
+
+.jewelry-image-container:hover {
+    transform: scale(1.05);
+    box-shadow: var(--card-hover-shadow);
+}
+
+.jewelry-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform var(--transition-duration) ease-in-out;
+}
+
+.jewelry-image-container img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--footer-bg);
+    color: #fff;
+    margin-top: 2rem;
+    transition: background-color var(--transition-duration) ease, color var(--transition-duration) ease;
+}
+
+footer:hover {
+    background-color: var(--footer-hover-bg);
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .jewelry-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .jewelry-section h2 {
+        font-size: 1.75rem;
+    }
+
+    .jewelry-category.circular {
+        width: 200px;
+        height: 200px;
+    }
+
+    .jewelry-category.circular img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .jewelry-category.circular {
+        width: 150px;
+        height: 150px;
+    }
+
+    .jewelry-category.circular img {
+        width: 90px;
+        height: 90px;
+    }
+}

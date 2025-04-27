@@ -1,0 +1,251 @@
+body {
+    font-family: 'Homemade Apple', cursive;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Header Styling */
+.main-header {
+    font-family: 'Homemade Apple', cursive;
+    font-style: normal;
+    font-weight: 400;
+    background-color: #fff;
+    padding: 1px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-nav ul li {
+    margin-left: 15px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+    color: #000;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 1.2em;
+}
+
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav button {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 1em;
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #f4f4f4;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+nav button:hover {
+    background-color: #555;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    text-align: center;
+    padding: 10px;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.product h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.product p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #555;
+}
+
+.product .price {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+}
+
+.product .ratings {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #f39c12;
+}
+
+.product button {
+    font-family: 'Homemade Apple', cursive;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: #f4f4f4;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.product button:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 0.5px;
+    background-color: #fff;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .main-header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main-nav ul li {
+        margin-left: 0;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    main {
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .product {
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        font-size: 1.8rem;
+    }
+
+    header h1 {
+        font-size: 1.6em;
+    }
+
+    nav button {
+        font-size: 0.9em;
+        padding: 8px 15px;
+    }
+
+    .product {
+        width: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    header h1 {
+        font-size: 1.4em;
+    }
+
+    nav button {
+        font-size: 0.8em;
+        padding: 6px 10px;
+    }
+
+    .product {
+        width: 100%;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+}

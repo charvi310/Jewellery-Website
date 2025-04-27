@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Jewellery Shop</title>
+    <link rel="stylesheet" href="checkout.css">
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Checkout</h1>
+        <p>Review your items and complete your purchase</p>
+    </header>
+
+    <div class="container">
+        <h2>Order Summary</h2>
+        <div class="order-summary">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="orderItems">
+                    <!-- Items will be dynamically added here -->
+                </tbody>
+            </table>
+            <p id="grandTotal" style="font-weight: bold; text-align: right;">Grand Total: $0</p>
+        </div>
+
+        <h2>Shipping Details</h2>
+        <div class="shipping-details">
+            <input type="text" placeholder="Full Name" required>
+            <input type="text" placeholder="Shipping Address" required>
+            <input type="text" placeholder="City" required>
+            <input type="text" placeholder="Postal Code" required>
+            <input type="text" placeholder="Phone Number" required>
+        </div>
+
+        <h2>Payment Method</h2>
+        <div class="payment-method">
+            <label>
+                <input type="radio" name="payment" value="credit-card" required> Credit Card
+            </label>
+            <label>
+                <input type="radio" name="payment" value="paypal" required> PayPal
+            </label>
+            <label>
+                <input type="radio" name="payment" value="cash-on-delivery" required> Cash on Delivery
+            </label>
+        </div>
+
+        <button type="button" onclick="completeCheckout()">Complete Purchase</button>
+    </div>
+
+    <script src="checkout.js"></script>
+</body>
+</html>
